@@ -144,8 +144,8 @@ Future iterations of this project could explore:
 
 ## Setup and Usage
 
-* Clone the repository: Copygit clone https://github.com/yourusername/stock-prediction-application.git
+* Clone the repository.
 
 * Install dependencies: Copypip install -r requirements.txt
 
-* Run the application: Copypython src/gui/main_window.py
+* Run the application: main.py .
