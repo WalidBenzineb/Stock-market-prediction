@@ -51,10 +51,10 @@ def preprocess_data(data):
     return data, scaler
 ```
 This approach ensures efficient data retrieval and standardized preprocessing, crucial for model performance.
-Model Implementation
+### Model Implementation
 The project implements three distinct models, each offering different approaches to time series prediction:
 
-Linear Regression (src/models/linear_regression.py):
+**Linear Regression (src/models/linear_regression.py):**
 ``` python
 sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -65,7 +65,7 @@ def train_linear_regression(X, y):
     model.fit(X_train, y_train)
     return model, X_test, y_test
 ``` 
-Random Forest (src/models/random_forest.py):
+**Random Forest (src/models/random_forest.py):**
 ``` python
 sklearn.ensemble import RandomForestRegressor
 
@@ -74,7 +74,7 @@ def train_random_forest(X, y):
     model.fit(X, y)
     return model
 ``` 
-LSTM (src/models/lstm.py):
+**LSTM (src/models/lstm.py):**
 
 ``` python
 tensorflow as tf
@@ -89,10 +89,11 @@ def create_lstm_model(input_shape):
 ``` 
 
 Each model is designed to capture different aspects of the time series data, from linear trends to complex patterns.
-GUI Development
+### GUI Development
 The application's interface is built using PyQt5, providing an intuitive user experience:
-pythonCopyfrom PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QComboBox
+
 ```python
+import QApplication, QMainWindow, QPushButton, QComboBox
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
